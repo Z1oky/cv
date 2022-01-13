@@ -4,76 +4,76 @@
 <head>
     <title>Oleg Av</title>
     <meta charset="UTF-8" />
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <img src="favicon.ico" alt="Avatarka" />
-    <h1>Олег Атанасов</h1>
-    <hr />
-    <p><em>Я изучаю <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong></em></p>
-    <p>Смотрю Аниме!</p>
-    <hr />
-    <h2>
-        <p>Мои социальные сети</p>
-    </h2>
-    <ul>
-        <li>
-            <a href="https://www.linkedin.com/in/oleg-atanasov-a5a03722b/" target="_blank">Linkedin</a>
-        </li>
-        <li>
-            <a href="https://github.com/Z1oky " target="_blank">GitHub</a>
-        </li>
-    </ul>
-    <hr />
-    <p>
-        <h2>Выучил/Учу</h2>
-    </p>
-    <ol>
-        <li>
-            HTML = UnComplete
-        </li>
-        <li>
-            CSS = UnComplete
-        </li>
-        <li>
-            JavaScript = UnComplete
-        </li>
-    </ol>
-    <hr />
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>Company</td>
-            <td>Software Engineer</td>
-            <td>2022-2022</td>
-        </tr>
-        <tr>
-            <td>Company2</td>
-            <td>Software Engineer</td>
-            <td>2022-2022</td>
-        </tr>
-    </table>
-    <hr />
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Ввод">
-        <br />
-        <label for="mail">Ваше Email:</label>
-        <input type="email" id="mail" placeholder="Ввод">
-        <br />
-        <label for="text">Ваше сообщение:</label>
-        <br />
-        <textarea name="text" id="text" cols="30" rows="10"></textarea>
-        <br />
-        <input type="submit" value="Связаться">
-    </form>
+    <div class="container">
+        <div class="info">
+            <img src="img/photo.jpg" alt="Avatarka" class="imgMyPhoto" />
+            <div class="info-text">
+                <h1>Олег Атанасов</h1>
+                <p><em>Я изучаю <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong></em></p>
+                <p></p>
+                <h4>Мои социальные сети</h4>
+                <a href="https://www.linkedin.com/in/oleg-atanasov-a5a03722b/" target="_blank">Linkedin</a> |
+                <a href="https://github.com/Z1oky " target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="card bg-red">
+            <p>
+                <h2>Курс</h2>
+            </p>
+            <ol class="list">
+                <li>
+                    HTML = 70%
+                </li>
+                <li>
+                    CSS = 50%
+                </li>
+                <li>
+                    JavaScript = 15%
+                </li>
+            </ol>
+        </div>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <th>Компания</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+                <tr>
+                    <td>PrJDevCit</td>
+                    <td>Front End Developer</td>
+                    <td>2021-2021</td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя...">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Ваше email:</label>
+                        <input type="email" id="mail" placeholder="Введите email...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                </div>
+                <input class="btn" type="submit" value="Связаться">
+            </form>
+        </div>
+    </div>
+    <div style="margin-bottom: 50px;">
+    </div>
 </body>
 
 </html>
