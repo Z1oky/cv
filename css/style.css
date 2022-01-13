@@ -69,12 +69,12 @@ a:hover {
     text-decoration: underline;
 }
 
-a:active {
-    color: blue;
-}
-
 a:visited {
     color: gray
+}
+
+a:active {
+    color: blue;
 }
 
 .bg-red {
